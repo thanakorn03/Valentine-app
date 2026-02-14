@@ -1,0 +1,15 @@
+{
+  "$schema": "https://raw.githubusercontent.com/renderinc/cli/main/schemas/service.json",
+  "name": "valentine-app",
+  "type": "web",
+  "env": "static",
+  "buildCommand": "npm run build",
+  "staticPublishPath": "dist",
+  "routes": [
+    {
+      "type": "rewrite",
+      "source": "/*",
+      "destination": "/index.html"
+    }
+  ]
+}
