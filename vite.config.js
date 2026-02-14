@@ -4,4 +4,20 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  server: {
+    allowedHosts: [
+      'valentine-app-bve1.onrender.com',
+      'localhost',
+      '127.0.0.1'
+    ]
+  },
+  preview: {
+    host: '0.0.0.0',
+    port: 3000,
+    allowedHosts: [
+      'valentine-app-bve1.onrender.com',
+      'localhost',
+      '127.0.0.1'
+    ]
+  }
 })
